@@ -8,23 +8,23 @@ const Header = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-sm">
+    <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
-          Your Name
+        <Link href="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+          YourName
         </Link>
         <div className="flex items-center space-x-4">
-          <Link href="/portfolio" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
+          <Link href="/portfolio" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
             Portfolio
           </Link>
-          <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
+          <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
             Blog
           </Link>
-          <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
+          <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
             About
           </Link>
-          <Link href="/resume" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
-            Resume
+          <Link href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+            Contact
           </Link>
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
